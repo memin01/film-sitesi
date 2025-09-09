@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Film Sitesi</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+  <div class="navbar">
+      <div class="navbar-wrapper">
+        <div class="logo-wrapper">
+          <h1 class="logo">NEVFLIX</h1>
+        </div>
+        <div class="menu-container">
+          <ul class="menu-list">
+            <li class="menu-list-item active" data-target="home">Ana Sayfa</li>
+            <li class="menu-list-item" data-target="movies">Filmler</li>
+            <li class="menu-list-item" data-target="series">Diziler</li>
+            <li class="menu-list-item" data-target="mylist">Listem</li>
+            <li class="menu-list-item" data-target="popular">Popüler</li>
+          </ul>
+        </div>
+        <div class="profile-container">
+          <img class="profile-picture" src="img/profile.jpg" alt="" />
+          <div class="profile-text-container">
+            <span class="profile-text">Hesabım</span>
+            <i class="bi bi-caret-down-fill"></i>
+          </div>
+          <div class="toggle">
+            <i class="bi bi-moon-fill toggle-icon"></i>
+            <i class="bi bi-brightness-high-fill toggle-icon"></i>
+            <div class="toggle-ball"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--! navbar end -->
+  <!--! sidebar start -->
+    <div class="sidebar">
+      <i class="bi bi-search"></i>
+      <i class="bi bi-house-door-fill"></i>
+      <i class="bi bi-people-fill"></i>
+      <i class="bi bi-bookmarks-fill"></i>
+      <i class="bi bi-hourglass-top"></i>
+      <i class="bi bi-cart-fill"></i>
+      <i class="bi bi-gear-fill"></i>
+    </div>
+    <!--! sidebar end -->
+    <!--! content start -->
+    <div class="container" id="home">
+      <!--? featured content start -->
+      <div class="content-wrapper">
+        <div class="featured-content">
+          <img class="featured-title" src="img/spiderman-title.png" alt="" />
+          <p class="featured-desc">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores ab
+            quia esse! Laboriosam hic quasi, nulla dolore facilis minima
+            expedita, voluptatibus repellat dicta reiciendis dolorum, magnam
+            debitis eveniet veritatis obcaecati.
+          </p>
+          <div class="featured-buttons">
+            <button class="play-button">
+              <i class="bi bi-play-circle"></i>
+              Oynat
+            </button>
+            <button class="info-button">
+              <i class="bi bi-info-circle"></i>
+              Daha Fazla Bilgi
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- featured content end -->
+
+      
+      <!-- filter  start -->
+      <div class="movie-list-filter">
+        <select>
+          <option>Aksiyon</option>
+          <option>Animasyon</option>
+          <option>Belgesel</option>
+          <option>Komedi</option>
+          <option>Bilim Kurgu</option>
+        </select>
+      </div>
+      <!-- filter end -->
+        <!-- movie list star -->
+         
+           <div class="movie-list-container" id="movies">
+            <h1 class="movie-list-title">Filmler</h1>
+            <div class="movie-list-wrapper">
+                <ul class="movie-list">
+                    <li class="movie-item">
+                        <a href="https://www.youtube.com/watch?v=mQ_F_0jA59k" target="_blank">
+        <img class="movie-item-img" src="img/f1.jpg" alt="">
+    </a>
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">SPIDER-MAN</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                     <li class="movie-item">
+                        <a href="https://www.youtube.com/watch?v=DIhrvt8o2io" target="_blank">
+        <img class="movie-item-img" src="img/f2.jpg" alt="">
+    </a>
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">HULK</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                     <li class="movie-item">
+                        <a href="https://www.youtube.com/watch?v=gv59E3PeWLo" target="_blank">
+        <img class="movie-item-img" src="img/f3.jpg" alt="">
+    </a>
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">GORA</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                     <li class="movie-item">
+                       <a href="https://www.youtube.com/watch?v=jAy6NJ_D5vU" target="_blank">
+        <img class="movie-item-img" src="img/f4.jpg" alt="">
+    </a>
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">DAREDEVIL</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                     <li class="movie-item">
+                        <a href="https://www.youtube.com/watch?v=h7XzHzoBgcc" target="_blank">
+        <img class="movie-item-img" src="img/f5.jpg" alt="">
+    </a>
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">HOBBIT</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                     <li class="movie-item">
+                        <a href="https://www.youtube.com/watch?v=s_jGIs9Vs-I" target="_blank">
+        <img class="movie-item-img" src="img/f6.jpg" alt="">
+    </a>
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">AROG</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                     <li class="movie-item">
+                        <a href="https://www.youtube.com/watch?v=QAj6yYiqOaw" target="_blank">
+        <img class="movie-item-img" src="img/f8.png" alt="">
+    </a>
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">JOHN-WICK</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <i class="bi bi-chevron-right arrow"></i>
+            </div>
+         </div>
+                  <div class="movie-list-container" id="series">
+            <h1 class="movie-list-title">Diziler</h1>
+            <div class="movie-list-wrapper">
+                <ul class="movie-list">
+                    <li class="movie-item">
+                        <a href="https://www.youtube.com/watch?v=YQeUmSD1c3g" target="_blank">
+        <img class="movie-item-img" src="img/f9.png" alt="">
+    </a>
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">DEXTER</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                     <li class="movie-item">
+                        <a href="https://www.youtube.com/watch?v=KPLWWIOCOOQ" target="_blank">
+        <img class="movie-item-img" src="img/f10.png" alt="">
+    </a>
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">GAME-OF-THRONES</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                     <li class="movie-item">
+                        <a href="https://www.youtube.com/watch?v=Dw1hJDUczAU" target="_blank">
+        <img class="movie-item-img" src="img/f11.png" alt="">
+    </a>
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">BREAKİNG-BAD</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                     <li class="movie-item">
+                       <a href="https://www.youtube.com/watch?v=jgoljNiSlHc" target="_blank">
+        <img class="movie-item-img" src="img/f12.png" alt="">
+    </a>
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">THE-100</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                     <li class="movie-item">
+                        <a href="https://www.youtube.com/watch?v=HxtLlByaYTc" target="_blank">
+        <img class="movie-item-img" src="img/f13.png" alt="">
+    </a>
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">RİVERDALE</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                     <li class="movie-item">
+                        <a href="https://www.youtube.com/watch?v=AL9zLctDJaU" target="_blank">
+        <img class="movie-item-img" src="img/f14.png" alt="">
+    </a>
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">PRİSON-BREAK</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                     <li class="movie-item">
+                        <a href="https://www.youtube.com/watch?v=9GgxinPwAGc" target="_blank">
+        <img class="movie-item-img" src="img/f15.png" alt="">
+    </a>
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">VIKINGS</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <i class="bi bi-chevron-right arrow"></i>
+            </div>
+         </div>
+                   <div class="movie-list-container" id="mylist">
+            <h1 class="movie-list-title">Listem</h1>
+            <div class="movie-list-wrapper">
+                <ul class="movie-list">
+                    <li class="movie-item">
+                        <a href="https://www.youtube.com/watch?v=h7XzHzoBgcc" target="_blank">
+        <img class="movie-item-img" src="img/f5.jpg" alt="">
+    </a>
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">HOBBIT</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                     <li class="movie-item">
+                        <a href="https://www.youtube.com/watch?v=YQeUmSD1c3g" target="_blank">
+        <img class="movie-item-img" src="img/f9.png" alt="">
+    </a>
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">DEXTER</span>
+                            
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                     <li class="movie-item">
+                        <a href="https://www.youtube.com/watch?v=jgoljNiSlHc" target="_blank">
+        <img class="movie-item-img" src="img/f12.png" alt="">
+    </a>
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">THE-100</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                     <li class="movie-item">
+                        <a href="https://www.youtube.com/watch?v=9GgxinPwAGc" target="_blank">
+        <img class="movie-item-img" src="img/f15.png" alt="">
+    </a>
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">VIKINGS</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                     <li class="movie-item">
+                        <a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank">
+        <img class="movie-item-img" src="img/f1.jpg" alt="">
+    </a>
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">SPIDER-MAN</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                     <li class="movie-item">
+                        <a href="https://www.youtube.com/watch?v=s_jGIs9Vs-I" target="_blank">
+        <img class="movie-item-img" src="img/f6.jpg" alt="">
+    </a>
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">AROG</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                     <li class="movie-item">
+                        <a href="https://www.youtube.com/watch?v=6y6o0niV5eA" target="_blank">
+        <img class="movie-item-img" src="img/f7.jpg" alt="">
+    </a>
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">DARK</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <i class="bi bi-chevron-right arrow"></i>
+            </div>
+         </div>
+         <div class="movie-list-container" id="popular">
+            <h1 class="movie-list-title">Popüler</h1>
+            <div class="movie-list-wrapper">
+                <ul class="movie-list">
+                    <li class="movie-item">
+                        <a href="https://www.youtube.com/watch?v=YQeUmSD1c3g" target="_blank">
+        <img class="movie-item-img" src="img/f9.png" alt="">
+    </a>
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">DEXTER</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                     <li class="movie-item">
+                        <a href="https://www.youtube.com/watch?v=DIhrvt8o2io" target="_blank">
+        <img class="movie-item-img" src="img/f2.jpg" alt="">
+    </a>
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">HULK</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                     <li class="movie-item">
+                        <a href="https://www.youtube.com/watch?v=6y6o0niV5eA" target="_blank">
+        <img class="movie-item-img" src="img/f7.jpg" alt="">
+    </a>
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">DARK</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                     <li class="movie-item">
+                        <a href="https://www.youtube.com/watch?v=QAj6yYiqOaw" target="_blank">
+        <img class="movie-item-img" src="img/f8.png" alt="">
+    </a>
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">JOHN-WICK</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                     <li class="movie-item">
+                        <a href="https://www.youtube.com/watch?v=h7XzHzoBgcc" target="_blank">
+        <img class="movie-item-img" src="img/f5.jpg" alt="">
+    </a>
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">HOBBIT</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                     <li class="movie-item">
+                        <a href="https://www.youtube.com/watch?v=s_jGIs9Vs-I" target="_blank">
+        <img class="movie-item-img" src="img/f6.jpg" alt="">
+    </a>
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">AROG</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                     <li class="movie-item">
+                        <a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank">
+        <img class="movie-item-img" src="img/f1.jpg" alt="">
+    </a>
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">SPIDER-MAN</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <i class="bi bi-chevron-right arrow"></i>
+            </div>
+         </div>
+         <!-- movie list end -->
+    </div>
+    <!--? featured content end -->
+    <!--! content end -->
+
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
